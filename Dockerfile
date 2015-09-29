@@ -1,6 +1,9 @@
 # Dockerfile to create a docker image
 FROM node
 
+RUN npm install --save express
+RUN npm install --save socket.io
+
 # Add files to the image
 RUN mkdir -p /opt/nodejs
 ADD . /opt/nodejs
