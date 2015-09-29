@@ -36,6 +36,7 @@ ADD supervisord.conf /etc/
 
 # Add the file
 ADD ./www /var/www
+RUN chomd -R 777 /var/www
 
 # Set the port to 80 
 EXPOSE 80
