@@ -58,11 +58,7 @@ io.on('connection', function(socket){
   
 });
 
-/* http.listen(3000, function(){
+http.listen(3000, function(){
 	console.log('listening on *:3000');
-}); */
+});
 
-http.createServer(function (request, response) {
-    response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
-    response.end(body);
-}).listen(3000)

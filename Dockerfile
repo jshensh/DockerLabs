@@ -10,6 +10,6 @@ ADD . /opt/nodejs
 WORKDIR /opt/nodejs
 
 # Expose the container port
-EXPOSE 5000
+EXPOSE 3000
 
 ENTRYPOINT ["node", "index.js"]
