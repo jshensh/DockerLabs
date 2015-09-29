@@ -35,7 +35,7 @@ ADD default.conf /etc/nginx/conf.d/default.conf
 ADD supervisord.conf /etc/
 
 # Add the file
-ADD tz.php /var/www/index.php
+ADD ./www /var/www
 
 # Set the port to 80 
 EXPOSE 80
