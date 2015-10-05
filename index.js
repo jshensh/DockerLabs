@@ -29,8 +29,8 @@ io.on('connection', function(socket){
 		//向所有客户端广播用户加入
 		io.emit('login', {onlineUsers:onlineUsers, onlineCount:onlineCount, user:obj});
 		console.log(obj.username+'加入了聊天室');
-		var endpoint = socket.manager.handshaken[socket.id].address;
-		console.log('Client connected from: ' + endpoint.address + ":" + endpoint.port);
+		var address = socket.handshake.address; 
+        console.log("New connection from " + address);
 	});
 	
 	//监听用户退出
